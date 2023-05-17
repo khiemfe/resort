@@ -1,0 +1,565 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+#body1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #252839;
+}
+
+ul {
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    /* khoảng cách giữa 2 thẻ li (hoặc 2 dòng, thẻ div,....) */
+    gap: 30px;
+}
+
+ul li {
+    /* position: relative; */
+    list-style: none;
+}
+
+ul li a {
+    position: relative;
+    font-size: 3em;
+    text-decoration: none;
+    line-height: 1em;
+    /* độ rộng giữa các chữ cái */
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    /* màu trùng vs màu nền */
+    color: transparent;
+    /* viền CHỮ màu... */
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
+}
+
+ul li a::before {
+    /* có một dòng chữ y hệt như dòng chữ của thẻ a */
+    content: attr(data-text);
+    /* absolute thì dòng chữ y hệt đó sẽ đè lên */
+    position: absolute;
+    /* màu chữ, từ màu giống màu nền chuyển thành ... */
+    color: var(--clr);
+    /* width bằng 0 để khi chưa hover thì nó chưa lên màu */
+    width: 0;
+    /* tắt màu chữ khi chưa hover lên */
+    overflow: hidden;
+    /* chạy trong 1s */
+    transition: 1s;
+    /* cây dọc màu, khi hover vào nó sẽ chạy qua bên phải*/
+    border-right: 8px solid var(--clr);
+    /* viền CHỮ màu --clr */
+    -webkit-text-stroke: 1px var(--clr);
+}
+
+ul li a:hover::before {
+    /* phải có width 100% mới thành công */
+    width: 100%;
+    /* tỏa sáng  */
+    filter: drop-shadow(0 0 25px var(--clr));
+}
+
+/* *********************************************************** */
+
+:root {
+    --card-height: 300px;
+    --card-width: calc(var(--card-height) / 1.5);
+  }
+
+* {
+    box-sizing: border-box;
+}
+/* nếu là css body thì width 100vw cũng đúng */
+#body2 {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #191c29;
+    
+}
+
+.card {
+    width: var(--card-width);
+    height: var(--card-height);
+    position: relative;
+    display: flex;
+    /* căn chiều ngang */
+    justify-content: center;
+    /* căn chiều dọc, end là nó nằm dưới cùng */
+    align-items: flex-end;
+    padding: 0 36px;
+    perspective: 2500px;
+    margin: 0 50px;
+}
+
+.cover-image {
+    width: 100%;
+    height: 100%;
+    /* làm rõ ảnh */
+    object-fit: cover;
+}
+
+.wrapper{
+    transition: all 0.5s;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+.card:hover .wrapper{
+    /* hiệu ứng chạy đẹp hơn (có độ nghiêng khi hover vào)*/
+    transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
+    box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+}
+
+.wrapper::before,
+.wrapper::after {
+    content: "";
+    opacity: 0;
+    width: 100%;
+    height: 80px;
+    transition: all 0.5s;
+    position: absolute;
+    left: 0;
+}
+
+.wrapper::before {
+    top: 0;
+    height: 100%;
+    background-image: linear-gradient(
+        to top,
+        transparent 46%,
+        rgba(12, 13, 19, 0.5) 68%,
+        rgba(12, 13, 19) 97%
+    );
+}
+
+.wrapper::after {
+    bottom: 0;
+    opacity: 1;
+    background-image: linear-gradient(
+        to bottom,
+        transparent 46%,
+        rgba(12, 13, 19, 0.5) 68%,
+        rgba(12, 13, 19) 97%
+    );
+}
+
+.card:hover .wrapper::before,
+.wrapper::after {
+    opacity: 1;
+}
+
+.card:hover .wrapper::after {
+    height: 120px;
+}
+
+.title {
+    width: 100%;
+    transition: transform 0.5s;
+}
+
+.card:hover .title {
+    transform: translate3d(0%, -50px, 100px);
+}
+
+.character {
+    width: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+    position: absolute;
+    z-index: -1;
+}
+
+.card:hover .character {
+    opacity: 1;
+    transform: translate3d(0%, -30%, 100px);
+}
+
+
+
+
+/* NARUTO */
+
+
+.card-nar {
+    width: var(--card-width);
+    height: var(--card-height);
+    position: relative;
+    
+    /* mặc định */
+    /* flex-direction: row; */
+    
+    display: flex;
+    /* nếu flex-direction: column thì ngược lại */
+    /* căn chiều ngang */
+    justify-content: center;
+    /* căn chiều dọc, end là nó nằm dưới cùng */
+    align-items: flex-end;
+
+    /* padding: 0 36px; */
+    /* perspective: 2500px; */
+    margin: 0 50px;
+    z-index: 1;
+}
+
+.cover-image-nar {
+    width: 100%;
+    height: 100%;
+    /* làm rõ ảnh */
+    object-fit: cover;
+}
+
+.wrapper-nar{
+    /* nghiêng bức ảnh đầu đẹp hơn */
+    transition: all 0.5s;
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* khi hover vào thì ảnh đầu sẽ nghiêng */
+.card-nar:hover .wrapper-nar{
+    /* hiệu ứng chạy đẹp hơn (có độ nghiêng khi hover vào)*/
+    transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
+    box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+}
+
+/* có cái này thì mới chạy before & after phía dưới */
+.wrapper-nar::before,
+.wrapper-nar::after {
+    content: "";
+    /* lúc đầu thì chỉ hiện after (màu hồng) vì opacity = 1, khi ta hover vào thì before
+     opacity = 1 mới thấy đc màu xanh của before */
+    opacity: 0;
+    width: 100%;
+    /* độ cao loan màu khi chưa hover (after) */
+    height: 80px;
+    transition: all 0.5s;
+    position: absolute;
+    left: 0;
+}
+
+.wrapper-nar::before {
+    top: 0;
+    /* độ cao của loan màu */
+    height: 100%;
+    background-image: linear-gradient(
+        /* tập trung màu ở phí trên */
+        to top,
+        transparent 46%,
+        rgba(116, 249, 7, 0.5) 68%,
+        rgb(14, 49, 249) 97%
+    );
+}
+
+/* after nó luôn hiện nên dù opacity = 0 nó vẫn hiện */
+.wrapper-nar::after {
+    bottom: 0;
+    /* opacity: 1; */
+    /* độ cao của before & after trên cũng là của cái này */
+    /* height: 80px; */
+    background-image: linear-gradient(
+        /* tập trung màu ở phía dưới */
+        to bottom,
+        transparent 46%,
+        rgba(223, 25, 25, 0.5) 68%,
+        rgb(250, 10, 142) 97%
+    );
+}
+
+/* khi hover vào thì cả before và after đều hiện màu */
+.card-nar:hover .wrapper-nar::before,
+.wrapper-nar::after {
+    opacity: 1;
+}
+
+/* khi hover vào thì chiều cao của loan màu của after sẽ tăng lên
+từ 80px lên 120px */
+.card-nar:hover .wrapper-nar::after {
+    height: 120px;
+}
+
+/* chỉnh logo naruto */
+.title-nar {
+    /* pos này có hay không đều được */
+    /* position: absolute; */
+
+    width: 70%;
+    /* logo chạy lên đẹp hơn */
+    transition: transform 0.5s;
+}
+
+/* khi hover vào thì logo cũng sẽ đi theo hình ảnh */
+.card-nar:hover .title-nar {
+    transform: translate3d(0%, -50px, 100px);
+}
+
+/* hình ảnh sau naruto, ta cho opacity = 0 để ẩn nó đi */
+.character-nar {
+    width: 100%;
+    /* height: 80%; */
+    opacity: 0;
+    transition: all 0.5s;
+    position: absolute;
+    /* z-index = -1 để ảnh không đè lên logo */
+    z-index: -1;
+    /* tỏ ảnh */
+    object-fit: cover;
+}
+
+/* khi hover vào thì hiện ảnh sau naruto */
+.card-nar:hover .character-nar {
+    opacity: 1;
+    transform: translate3d(0%, -30%, 100px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.body-bor {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background: #191c29;
+
+}
+
+.card-bor {
+    width: var(--card-width);
+    height: var(--card-height);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    z-index: 1;
+}
+
+.wrapper-bor {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    transition: all 0.5s;
+}
+
+.cover-image-bor {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-bor:hover .wrapper-bor {
+    /* độ nghiêng 900px, ảnh đầu đi lên 5%, nghiêng 25 độ, độ phình to và đẩy ra là 0*/
+    transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
+    box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+}
+
+.wrapper-bor::before,
+.wrapper-bor::after {
+    opacity: 0;
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    content: "";
+    transition: all 0.5s;
+    left: 0;
+}
+
+.wrapper-bor::before {
+    top: 0;
+    height: 100%;
+    background-image: linear-gradient(
+        to top,
+        transparent 46%,
+        rgba(12, 13, 19, 0.5) 68%,
+        rgb(12, 13, 19) 97%
+    );
+}
+
+.wrapper-bor::after {
+    bottom: 0;
+    background-image: linear-gradient(
+        to bottom,
+        transparent 46%,
+        rgba(12, 13, 19, 0.5) 68%,
+        rgb(12, 13, 19) 97%
+    );
+}
+
+.card-bor:hover .wrapper-bor::before,
+.wrapper-bor::after {
+    opacity: 1;
+}
+
+/* .card-nar:hover .wrapper-nar::after {
+    height: 120px;
+} */
+
+.character-bor {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    z-index: -1;
+    transition: all 0.5s;
+}
+
+.card-bor:hover .character-bor {
+    opacity: 1;
+    /* di chuyển lên theo chiều dọc, vì x=0% nên không tác động đến chiều ngang
+    di chuyển lên phía trên 30% (y=30%), và z=100px (z=0)  cũng đc*/
+    transform: translate3d(0%, -30%, 100px);
+
+}
+
+.title-bor {
+    width: 70%;
+    transition: transform 0.5s;
+
+}
+
+.card-bor:hover .title-bor {
+    transform: translate3d(0%, -50px, 100px);
+}
+
+
+
+
+
+
+/* ************************************ */
+/* Navbar */
+*,
+*::after,
+*::before {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#body3 {
+    font-family: "Inter", sans-serif;
+    line-height: 1.5;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eee;
+}
+
+.menu {
+    padding: 2rem;
+    background-color: #fff;
+    position: relative;
+    width: calc(130px + 4 * 70px + 4rem);
+    display: flex;
+    justify-content: center;
+    border-radius: 20px 20px;
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.075);
+}
+
+.link {
+    display: inline-block;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 50px;
+    border-radius: 99em;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transform-origin: center left;
+    /* khi hover vào thì width từ 70px lên 140px theo hiệu ứng ease-in */
+    transition: width 0.25 ease-in;
+    text-decoration: none;
+    color: inherit;
+}
+
+.link:before {
+    position: absolute;
+    z-index: -1;
+    content: "";
+    display: block;
+    border-radius: 99em;
+    width: 100%;
+    height: var(--height-navbar);
+    top: 0;
+    transform: translateX(100%);
+    /* chạy từ cột X=0% đến cột X=100% theo hiệu ứng ease-in */
+    transition: transform 0.3s ease-in;
+    transform-origin: center right;
+    background-color: #eee;
+}
+
+.link:hover, .link:focus {
+    outline: 0;
+    /* khi hover vào thì width từ 70px lên 140px theo hiệu ứng ease-in */
+    width: 140px;
+}
+
+.link:hover:before,
+.link:hover .link-title {
+    /* cột X=0% khi chưa hover vào */
+    transform: translateX(0%);
+}
+
+.link-icon {
+    color: var(--color-navbar);
+    font-size: 27px !important;
+    display: block;
+    flex-shrink: 0;
+    left: 10px;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    line-height: 50px;
+    /* căn giữa */
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 5px;
+}
+
+.link-title {
+    color: var(--color-navbar);
+    transform: translateX(100%);
+    /* chạy từ cột X=0% đến cột X=100% theo hiệu ứng ease-in */
+    transition: transform 0.3s ease-in;
+    display: block;
+    text-align: center;
+    text-indent: 20px;
+    width: 100%;
+    line-height: calc(var(--height-navbar));
+    margin-left: 5px;
+}

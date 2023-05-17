@@ -1,0 +1,36 @@
+:root {
+    --grid-width: 1350px;
+    --header-height: 80px;
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333 ;
+    --border-color: #dbdbdb;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ 
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.grid_three {
+    width: 33.333%;
+}
+
+.grid__row {
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* loại bỏ 2 margin dư thừa ở 2 biên, vì ta đã grid rồi nên nó đã có
+    2 khoảng cách ở 2 bên, ta margin 2 bên ở column thì nó sẽ tăng thêm
+    khoảng cách, nên ra phải margin âm lại để xóa bỏ đi */
+    /* margin-left: -5px;
+    margin-right: -5px; */
+}
+

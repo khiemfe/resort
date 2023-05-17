@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* .div{
+    display: flex;
+} */
+
+body > div{
+    /* giữa  */
+    margin: auto;
+}
+
+/* Block */
+.btn{
+    /* display: inline-block; */
+    text-decoration: none;
+    /* xóa màu mặc định */
+    background-color: transparent;
+    border: none;
+    /* tắt đưa chuột hay kick vào hiện ra khung */
+    /* outline: none; */
+    color: #fff;
+    padding: 12px 48px;
+    border-radius: 50px;
+    cursor: pointer;
+    /* đưa chuột vào chuyển mày mờ đẹp hơn */
+    transition: opacity 0.2s ease;
+    /* chiều ngang nút nhỏ nhất */
+    min-width: 120px;
+}
+
+.btn-size-l{
+    padding: 15px 56px;
+}
+
+.btn-size-s{
+    padding: 8px 32px;
+}
+
+.btn:hover{
+    opacity: 0.8;
+}
+
+/* css cho thằng đứng đằng sau btn, đứng cạnh nhau là nó css đc */
+.btn + .btn{
+    margin-left: 16px;
+}
+
+.btn--success{
+    background-color: #1fd93b;
+}
+
+.btn--warn{
+    background-color: #ffc310;
+}
+
+.btn--danger{
+    background-color: #ed0909;
+}
+
+/* chỉnh nhìn là biết ko bấm nút đc */
+.btn--disabeld{
+    opacity: 0.5 !important;
+    cursor: default !important;
+}
+
+#toast{
+    position: fixed;
+    top: 32px;
+    right: 32px;
+}
+
+.toast{
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 2px;
+    padding: 20px 0;
+    min-width: 400px;
+    max-width: 450px;
+    border-left: 4px solid;
+    box-shadow: 0 5px 8px 5px rgba(0, 0, 0, 0.08);
+}
+
+.toast__icon{
+    font-size: 24px;
+}
+
+.toast__icon, .toast__close{
+    padding: 0 16px;
+}
+
+.toast__body{
+    flex-grow: 1;
+}
+
+.toast + .toast{
+    margin-top: 16px;
+}
+
+.toast__title{
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+}
+.toast__msg{
+    font-size: 14px;
+    margin-top: 6px;
+    color: #888;
+    line-height: 1.5;
+}
+
+.toast__close{
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.toast__close:hover{
+    opacity: 0.8;
+}
+
+.toast--success{
+    border-color: #1fd93b;
+}
+
+.toast--success .toast__icon{
+    color: #1fd93b;
+}
+
+.toast--info{
+    border-color: #2f86eb;
+}
+
+.toast--info .toast__icon{
+    color: #2f86eb;
+}
+
+.toast--warning {
+    border-color: #ffc021;
+}
+
+.toast--warning .toast__icon {
+    color: #ffc021;
+}
+
+.toast--error {
+    border-color: red;
+}
+
+.toast--error .toast__icon{
+    color: red;
+}
+
+.toast__icon, .toast__close {
+    padding: 0 16px;
+}

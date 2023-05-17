@@ -1,0 +1,1449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web - Nghỉ dưỡng</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/base.css">
+    <link rel="stylesheet" href="./assets/grid.css">
+    <link rel="stylesheet" href="./assets/responsive.css">
+    <link rel="stylesheet" href="./assets/fonts/themify-icons-font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.3.0-web/fontawesome-free-6.3.0-web/css/all.css">
+    <!-- thư viện reset css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" >
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
+
+</head>
+<!-- <input type="checkbox" name="" class="nav__input-khung-modal" id="check-khung-modal"> -->
+<!-- <label for="check-khung-modal" class="modal__overlay-checkbox"></label> -->
+<body>
+    <div class="resort">
+        <div class="header">
+            <div class="grid wide">
+                <!-- <div class="no-row"> -->
+                    <div class="header__navbar">
+                        <a href="#" class="header__logo l-4">
+                            <!-- <img class="header__logo-img" src="./assets/img/logo.png" alt=""> -->
+                            <div class="header__logo-img"></div>
+                        </a>
+                        <!-- phần header ở giữa -->
+                        <div class="header__center ">
+                            <ul class="header__center-list">
+                                <label  for="check-khung-modal-location" class="header__center-item">
+                                    <span class="header__center-link">Địa điểm bất kỳ</span>
+                                    <!-- Địa điểm bất kỳ -->
+                                </label>
+                                <label for="check-khung-modal-location" class="header__center-item">
+                                    <span class="header__center-link">Tuần bất kỳ</span>
+                                </label>
+                                <label for="check-khung-modal-location" class="header__center-item">
+                                    <span class=" header__center-link-bland">
+                                        <span class="text">Thêm khách</span> 
+                                        <span class="header__center-link-ground">
+                                            <i class="header__center-link-icon fa-solid fa-magnifying-glass"></i>
+                                        </span>
+                                    </span>
+                                </label>
+                            </ul>
+                        </div>
+
+                        <label for="check-search-mobile" class="header__center-mobile ">
+                            <!-- <ul class="header__center-mobile-list"> -->
+                                <div class="header__center-mobile-body">
+                                    <i class="header__center-mobile-link-icon-search fa-solid fa-magnifying-glass"></i>
+                                    <div class="header__center-mobile-list">
+                                        <label  for="check-khung-modal-location" class="header__center-mobile-item">
+                                            <span class="header__center-mobile-link">Địa điểm bất kỳ</span>
+                                        </label>
+                                        <label for="check-khung-modal-location" class="header__center-mobile-item">
+                                            <span class="header__center-mobile-link">Tuần bất kỳ</span>
+                                            <span class="text">Thêm khách</span> 
+                                        </label>
+                                    </div>
+                                </div>
+                                <button class="header__center-mobile-link-filter">
+                                    <i class="header__center-mobile-link-icon fa-solid fa-sliders"></i>
+                                </button>
+                            <!-- </ul> -->
+                        </label>
+
+                        
+                        <!-- phần header ở bên phải -->
+                        <div class="header__right l-4">
+                            <ul class="header__right-list">
+                                <li class="header__right-item-text">
+                                    <a href="" class="header__right-link">Cho thuê chỗ ở qua Airbnb</a>
+                                </li>  
+
+                                <!-- <input type="checkbox" name="" class="nav__input-khung-modal" id="check-khung-modal"> -->
+                                <!-- <label for="check-khung-modal" class="header__right-item-globe-translation-checkbox-ngoai">
+                                    <label for="check-khungmodal" class="header__right-item-globe-translation-checkbox-trong">
+                                    </label>
+                                </label> --> 
+                                <li class="header__right-item-icon">
+                                    <label for="check-khung-modal" class="header__right-link header__right-link-globe">
+                                        <i class=" fa-sharp fa-solid fa-globe"></i>
+                                    </label>
+                                </li>
+
+                                <li class="header__right-item-account">
+                                    <button class="header__right-link header__right-link-account">
+                                        <i class="header__right-link header__right-link-icon-bars fa-solid fa-bars"></i>
+                                        <img class="header__right-link-img" src="./assets/img/naruto_after.jpg" alt="">
+                                    </button>
+                                    
+                                    <ul class="header__right-menu">
+                                        <li class="header__right-user-item">
+                                            <a href="" class="header__right-menu-link">Đăng ký</a>
+                                        </li>
+                                        
+                                        <li class="header__right-user-item border-dangnhap">
+                                            <a href="" class="header__right-menu-link">Đăng nhập</a>
+                                        </li>
+
+                                        <li class="header__right-user-item">
+                                            <a href="" class="header__right-menu-link">Cho thuê chỗ ở qua Airbnb</a>
+                                        </li>
+
+                                        <li class="header__right-user-item">
+                                            <a href="" class="header__right-menu-link">Tổ chức trải nghiệm</a>
+                                        </li>
+
+                                        <li class="header__right-user-item">
+                                            <a href="" class="header__right-menu-link">Trợ giúp</a>
+                                        </li>
+                                    </ul>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                <!-- </div> -->
+                <!-- phần dưới header -->
+                    <div class="container__header">
+                        <ul class="container__header-list l-10_5 m-10 c-12">
+                            <li class="container__header-item container__header-item--active">
+                                <div class="container__header-item-icon">
+                                    <img src="./assets/img/lua-fire.jpg" class="container__header-item-icon-img" alt="">
+                                </div>
+                                <span class="container__header-item-title">Được ưa chuộng</span>
+                            </li>
+
+                            <li class="container__header-item container__header-item--no-active">
+                                <div class="container__header-item-icon">
+                                    <img src="./assets/img/bai-bien.jpg" class="container__header-item-icon-img" alt="">
+                                </div>
+                                <span class="container__header-item-title">Bãi biển</span>
+                            </li>
+
+                            <li class="container__header-item container__header-item--no-active">
+                                <div class="container__header-item-icon">
+                                    <img src="./assets/img/nong-thon.jpg" class="container__header-item-icon-img" alt="">
+                                </div>
+                                <span class="container__header-item-title">Nông thôn</span>
+                            </li>
+
+                            <li class="container__header-item container__header-item--no-active">
+                                <div class="container__header-item-icon">
+                                    <img src="./assets/img/thuyen.jpg" class="container__header-item-icon-img" alt="">
+                                </div>
+                                <span class="container__header-item-title">Thuyền</span>
+                            </li>
+
+                            <li class="container__header-item container__header-item--no-active">
+                                <div class="container__header-item-icon">
+                                    <img src="./assets/img/ho-boi.jpg" class="container__header-item-icon-img" alt="">
+                                </div>
+                                <span class="container__header-item-title">Hồ bơi tuyệt vời</span>
+                            </li>
+
+                            <li class="container__header-item container__header-item--no-active">
+                                <div class="container__header-item-icon">
+                                    <img src="./assets/img/nha-tren-nui.jpg" class="container__header-item-icon-img" alt="">
+                                </div>
+                                <span class="container__header-item-title">Nhà trên núi</span>
+                            </li>
+
+                            <li class="container__header-item container__header-item--no-active">
+                                <div class="container__header-item-icon">
+                                    <img src="./assets/img/luxe.jpg" class="container__header-item-icon-img" alt="">
+                                </div>
+                                <span class="container__header-item-title">Luxe</span>
+                            </li>
+
+                            <li class="container__header-item container__header-item--no-active">
+                                <div class="container__header-item-icon">
+                                    <img src="./assets/img/Biet-thu.jpg" class="container__header-item-icon-img" alt="">
+                                </div>
+                                <span class="container__header-item-title">Biệt thự</span>
+                            </li>
+
+                            <li class="container__header-item container__header-item--no-active">
+                                <div class="container__header-item-icon">
+                                    <img src="./assets/img/khung-canh-tuyet-voi.jpg" class="container__header-item-icon-img" alt="">
+                                </div>
+                                <span class="container__header-item-title">Khung cảnh tuyệt vời</span>
+                            </li>
+
+                            <li class="container__header-item container__header-item--no-active">
+                                <div class="container__header-item-icon">
+                                    <img src="./assets/img/nha-nho.jpg" class="container__header-item-icon-img" alt="">
+                                </div>
+                                <span class="container__header-item-title">Nhà nhỏ</span>
+                            </li>
+
+                            <li class="container__header-item container__header-item--no-active">
+                                <div class="container__header-item-icon">
+                                    <img src="./assets/img/ho.jpg" class="container__header-item-icon-img" alt="">
+                                </div>
+                                <span class="container__header-item-title">Hồ</span>
+                            </li>
+
+                            <li class="container__header-item container__header-item--no-active">
+                                <div class="container__header-item-icon">
+                                    <img src="./assets/img/dao.jpg" class="container__header-item-icon-img" alt="">
+                                </div>
+                                <span class="container__header-item-title">Đảo</span>
+                            </li>
+
+                            <li class="container__header-item container__header-item--no-active">
+                                <div class="container__header-item-icon">
+                                    <img src="./assets/img/cong-vien-quoc-gia.jpg" class="container__header-item-icon-img" alt="">
+                                </div>
+                                <span class="container__header-item-title">Công viên quốc gia</span>
+                            </li>
+                        </ul>
+
+                    
+                        <div class="container__header-filter l-1_5 m-2 c-0">
+                            <div class="container__header-turn-right">
+                                <i class="container__header-turn-right-icon fa-solid fa-angle-right"></i>
+                            </div>
+
+                            <button class="container__header-filter-body">
+                                <i class="fa-solid fa-sliders"></i>
+                                <div class="container__header-filter-title">Bộ lọc</div>
+                            </button>
+                        </div>
+                    </div>
+
+
+                    
+                    
+                
+
+                
+            </div>
+        </div>
+
+        <!-- body -->
+        <div class="container">
+            <div class="grid wide">
+                <div class="no-row">
+                    <!-- <div class="body_container">
+                        <div class="container__header">
+                            <ul class="container__header-list l-10">
+                                <li class="container__header-item container__header-item--active">
+                                    <div class="container__header-item-icon">
+                                        <img src="./assets/img/lua-fire.jpg" class="container__header-item-icon-img" alt="">
+                                    </div>
+                                    <span class="container__header-item-title">Được ưa chuộng</span>
+                                </li>
+    
+                                <li class="container__header-item container__header-item--no-active">
+                                    <div class="container__header-item-icon">
+                                        <img src="./assets/img/bai-bien.jpg" class="container__header-item-icon-img" alt="">
+                                    </div>
+                                    <span class="container__header-item-title">Bãi biển</span>
+                                </li>
+    
+                                <li class="container__header-item container__header-item--no-active">
+                                    <div class="container__header-item-icon">
+                                        <img src="./assets/img/nong-thon.jpg" class="container__header-item-icon-img" alt="">
+                                    </div>
+                                    <span class="container__header-item-title">Nông thôn</span>
+                                </li>
+    
+                                <li class="container__header-item container__header-item--no-active">
+                                    <div class="container__header-item-icon">
+                                        <img src="./assets/img/thuyen.jpg" class="container__header-item-icon-img" alt="">
+                                    </div>
+                                    <span class="container__header-item-title">Thuyền</span>
+                                </li>
+    
+                                <li class="container__header-item container__header-item--no-active">
+                                    <div class="container__header-item-icon">
+                                        <img src="./assets/img/ho-boi.jpg" class="container__header-item-icon-img" alt="">
+                                    </div>
+                                    <span class="container__header-item-title">Hồ bơi tuyệt vời</span>
+                                </li>
+    
+                                <li class="container__header-item container__header-item--no-active">
+                                    <div class="container__header-item-icon">
+                                        <img src="./assets/img/nha-tren-nui.jpg" class="container__header-item-icon-img" alt="">
+                                    </div>
+                                    <span class="container__header-item-title">Nhà trên núi</span>
+                                </li>
+    
+                                <li class="container__header-item container__header-item--no-active">
+                                    <div class="container__header-item-icon">
+                                        <img src="./assets/img/luxe.jpg" class="container__header-item-icon-img" alt="">
+                                    </div>
+                                    <span class="container__header-item-title">Luxe</span>
+                                </li>
+    
+                                <li class="container__header-item container__header-item--no-active">
+                                    <div class="container__header-item-icon">
+                                        <img src="./assets/img/Biet-thu.jpg" class="container__header-item-icon-img" alt="">
+                                    </div>
+                                    <span class="container__header-item-title">Biệt thự</span>
+                                </li>
+    
+                                <li class="container__header-item container__header-item--no-active">
+                                    <div class="container__header-item-icon">
+                                        <img src="./assets/img/khung-canh-tuyet-voi.jpg" class="container__header-item-icon-img" alt="">
+                                    </div>
+                                    <span class="container__header-item-title">Khung cảnh tuyệt vời</span>
+                                </li>
+    
+                                <li class="container__header-item container__header-item--no-active">
+                                    <div class="container__header-item-icon">
+                                        <img src="./assets/img/nha-nho.jpg" class="container__header-item-icon-img" alt="">
+                                    </div>
+                                    <span class="container__header-item-title">Nhà nhỏ</span>
+                                </li>
+    
+                                <li class="container__header-item container__header-item--no-active">
+                                    <div class="container__header-item-icon">
+                                        <img src="./assets/img/ho.jpg" class="container__header-item-icon-img" alt="">
+                                    </div>
+                                    <span class="container__header-item-title">Hồ</span>
+                                </li>
+    
+                                <li class="container__header-item container__header-item--no-active">
+                                    <div class="container__header-item-icon">
+                                        <img src="./assets/img/dao.jpg" class="container__header-item-icon-img" alt="">
+                                    </div>
+                                    <span class="container__header-item-title">Đảo</span>
+                                </li>
+    
+                                <li class="container__header-item container__header-item--no-active">
+                                    <div class="container__header-item-icon">
+                                        <img src="./assets/img/cong-vien-quoc-gia.jpg" class="container__header-item-icon-img" alt="">
+                                    </div>
+                                    <span class="container__header-item-title">Công viên quốc gia</span>
+                                </li>
+                                
+    
+                                
+                            </ul>
+    
+                        
+                            <div class="container__header-filter l-2 ">
+                                <div class="container__header-turn-right">
+                                    <i class="container__header-turn-right-icon fa-solid fa-angle-right"></i>
+                                </div>
+    
+                                <button class="container__header-filter-body">
+                                    <i class="fa-solid fa-sliders"></i>
+                                    <div class="container__header-filter-title">Bộ lọc</div>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div> -->
+
+                    <div class="container__charge">
+                        <span class="container__charge-title">Hiển thị tổng giá</span>
+                        <span class="container__charge-text">Bao gồm mọi khoản phí, trước thuế</span>
+                        
+                        <input type="checkbox" name="" class="nav__input" id="check">
+                        <label for="check" class="container__charge-check-ngoai">
+                            <label for="check" class="container__charge-check-trong">
+                                <i class="container__charge-check-icon fa-solid fa-check"></i>
+                            </label>
+                        </label>
+                    </div>
+                    <!-- mobile -->
+                    <div class="container__charge-mobile">
+                        <div class="container__charge-mobile-title-text">
+                            <span class="container__charge-mobile-title">Hiển thị tổng giá</span>
+                            <span class="container__charge-mobile-text">Bao gồm mọi khoản phí, trước thuế</span>
+                        </div>
+                        
+                        <input type="checkbox" name="" class="nav__input" id="check-mobile">
+                        <label for="check-mobile" class="container__charge-check-ngoai">
+                            <label for="check-mobile" class="container__charge-check-trong">
+                                <i class="container__charge-check-icon fa-solid fa-check"></i>
+                            </label>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- body chính -->
+
+                <!-- <div class="row"> -->
+                <div class="container__header-body">
+                    <ul class="container__header-body-list row">
+                        <!-- 1 -->
+                        <li class="container__header-body-item col l-3 m-6 c-12">
+                            <a href="'" class="container__header-body-link">
+                                <div class="container__header-body-image">
+                                    <img src="./assets/img/dl1.jpeg" alt="" class="container__header-body-img">
+                                    <i class="container__header-body-icon fa-regular fa-heart"></i>
+                                    <i class="container__header-body-icon-right fa-solid fa-chevron-right"></i>
+                                </div>
+                                <div class="container__header-body-text">
+                                    <div class="container__header-body-heading">
+                                        <span class="container__header-body-heading-text">Vịnh Hạ Long, Việt Nam</span>
+                                        <p class="container__header-body-heading-evaluate">
+                                            <i class="container__header-body-heading-icon fa-solid fa-star"></i>
+                                            <span>4.5</span>
+                                        </p>
+                                    </div>
+                                    <p class="container__header-body-title">Được xem 35.531 lần trong tuần trước</p>
+                                    <p class="container__header-body-title">7 đêm ‧ Ngày 4 - Ngày 11 tháng 6</p>
+                                    <p class="container__header-body-price">
+                                        <span class="container__header-body-price-tax">tổng trước thuế </span>
+                                        <span class="container__header-body-price-tax">₫19.671.844 </span>
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- 2 -->
+                        <li class="container__header-body-item col l-3 m-6 c-12">
+                            <a href="'" class="container__header-body-link">
+                                <div class="container__header-body-image">
+                                    <img src="./assets/img/dl1.jpeg" alt="" class="container__header-body-img">
+                                    <i class="container__header-body-icon fa-regular fa-heart"></i>
+                                    <i class="container__header-body-icon-right fa-solid fa-chevron-right"></i>
+                                </div>
+                                <div class="container__header-body-text">
+                                    <div class="container__header-body-heading">
+                                        <span class="container__header-body-heading-text">Vịnh Hạ Long, Việt Nam</span>
+                                        <p class="container__header-body-heading-evaluate">
+                                            <i class="container__header-body-heading-icon fa-solid fa-star"></i>
+                                            <span>4.5</span>
+                                        </p>
+                                    </div>
+                                    <p class="container__header-body-title">Được xem 35.531 lần trong tuần trước</p>
+                                    <p class="container__header-body-title">7 đêm ‧ Ngày 4 - Ngày 11 tháng 6</p>
+                                    <p class="container__header-body-price">
+                                        <span class="container__header-body-price-tax">tổng trước thuế </span>
+                                        <span class="container__header-body-price-tax">₫19.671.844 </span>
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- 3 -->
+                        <li class="container__header-body-item col l-3 m-6 c-12">
+                            <a href="'" class="container__header-body-link">
+                                <div class="container__header-body-image">
+                                    <img src="./assets/img/dl1.jpeg" alt="" class="container__header-body-img">
+                                    <i class="container__header-body-icon fa-regular fa-heart"></i>
+                                    <i class="container__header-body-icon-right fa-solid fa-chevron-right"></i>
+                                </div>
+                                <div class="container__header-body-text">
+                                    <div class="container__header-body-heading">
+                                        <span class="container__header-body-heading-text">Vịnh Hạ Long, Việt Nam</span>
+                                        <p class="container__header-body-heading-evaluate">
+                                            <i class="container__header-body-heading-icon fa-solid fa-star"></i>
+                                            <span>4.5</span>
+                                        </p>
+                                    </div>
+                                    <p class="container__header-body-title">Được xem 35.531 lần trong tuần trước</p>
+                                    <p class="container__header-body-title">7 đêm ‧ Ngày 4 - Ngày 11 tháng 6</p>
+                                    <p class="container__header-body-price">
+                                        <span class="container__header-body-price-tax">tổng trước thuế </span>
+                                        <span class="container__header-body-price-tax">₫19.671.844 </span>
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- 4 -->
+                        <li class="container__header-body-item col l-3 m-6 c-12">
+                            <a href="'" class="container__header-body-link">
+                                <div class="container__header-body-image">
+                                    <img src="./assets/img/dl1.jpeg" alt="" class="container__header-body-img">
+                                    <i class="container__header-body-icon fa-regular fa-heart"></i>
+                                    <i class="container__header-body-icon-right fa-solid fa-chevron-right"></i>
+                                </div>
+                                <div class="container__header-body-text">
+                                    <div class="container__header-body-heading">
+                                        <span class="container__header-body-heading-text">Vịnh Hạ Long, Việt Nam</span>
+                                        <p class="container__header-body-heading-evaluate">
+                                            <i class="container__header-body-heading-icon fa-solid fa-star"></i>
+                                            <span>4.5</span>
+                                        </p>
+                                    </div>
+                                    <p class="container__header-body-title">Được xem 35.531 lần trong tuần trước</p>
+                                    <p class="container__header-body-title">7 đêm ‧ Ngày 4 - Ngày 11 tháng 6</p>
+                                    <p class="container__header-body-price">
+                                        <span class="container__header-body-price-tax">tổng trước thuế </span>
+                                        <span class="container__header-body-price-tax">₫19.671.844 </span>
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- 5 -->
+                        <li class="container__header-body-item col l-3 m-6 c-12">
+                            <a href="'" class="container__header-body-link">
+                                <div class="container__header-body-image">
+                                    <img src="./assets/img/dl1.jpeg" alt="" class="container__header-body-img">
+                                    <i class="container__header-body-icon fa-regular fa-heart"></i>
+                                    <i class="container__header-body-icon-right fa-solid fa-chevron-right"></i>
+                                </div>
+                                <div class="container__header-body-text">
+                                    <div class="container__header-body-heading">
+                                        <span class="container__header-body-heading-text">Vịnh Hạ Long, Việt Nam</span>
+                                        <p class="container__header-body-heading-evaluate">
+                                            <i class="container__header-body-heading-icon fa-solid fa-star"></i>
+                                            <span>4.5</span>
+                                        </p>
+                                    </div>
+                                    <p class="container__header-body-title">Được xem 35.531 lần trong tuần trước</p>
+                                    <p class="container__header-body-title">7 đêm ‧ Ngày 4 - Ngày 11 tháng 6</p>
+                                    <p class="container__header-body-price">
+                                        <span class="container__header-body-price-tax">tổng trước thuế </span>
+                                        <span class="container__header-body-price-tax">₫19.671.844 </span>
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- 6 -->
+                        <li class="container__header-body-item col l-3 m-6 c-12">
+                            <a href="'" class="container__header-body-link">
+                                <div class="container__header-body-image">
+                                    <img src="./assets/img/dl1.jpeg" alt="" class="container__header-body-img">
+                                    <i class="container__header-body-icon fa-regular fa-heart"></i>
+                                    <i class="container__header-body-icon-right fa-solid fa-chevron-right"></i>
+                                </div>
+                                <div class="container__header-body-text">
+                                    <div class="container__header-body-heading">
+                                        <span class="container__header-body-heading-text">Vịnh Hạ Long, Việt Nam</span>
+                                        <p class="container__header-body-heading-evaluate">
+                                            <i class="container__header-body-heading-icon fa-solid fa-star"></i>
+                                            <span>4.5</span>
+                                        </p>
+                                    </div>
+                                    <p class="container__header-body-title">Được xem 35.531 lần trong tuần trước</p>
+                                    <p class="container__header-body-title">7 đêm ‧ Ngày 4 - Ngày 11 tháng 6</p>
+                                    <p class="container__header-body-price">
+                                        <span class="container__header-body-price-tax">tổng trước thuế </span>
+                                        <span class="container__header-body-price-tax">₫19.671.844 </span>
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- 7 -->
+                        <li class="container__header-body-item col l-3 m-6 c-12">
+                            <a href="'" class="container__header-body-link">
+                                <div class="container__header-body-image">
+                                    <img src="./assets/img/dl1.jpeg" alt="" class="container__header-body-img">
+                                    <i class="container__header-body-icon fa-regular fa-heart"></i>
+                                    <i class="container__header-body-icon-right fa-solid fa-chevron-right"></i>
+                                </div>
+                                <div class="container__header-body-text">
+                                    <div class="container__header-body-heading">
+                                        <span class="container__header-body-heading-text">Vịnh Hạ Long, Việt Nam</span>
+                                        <p class="container__header-body-heading-evaluate">
+                                            <i class="container__header-body-heading-icon fa-solid fa-star"></i>
+                                            <span>4.5</span>
+                                        </p>
+                                    </div>
+                                    <p class="container__header-body-title">Được xem 35.531 lần trong tuần trước</p>
+                                    <p class="container__header-body-title">7 đêm ‧ Ngày 4 - Ngày 11 tháng 6</p>
+                                    <p class="container__header-body-price">
+                                        <span class="container__header-body-price-tax">tổng trước thuế </span>
+                                        <span class="container__header-body-price-tax">₫19.671.844 </span>
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- 8 -->
+                        <li class="container__header-body-item col l-3 m-6 c-12">
+                            <a href="'" class="container__header-body-link">
+                                <div class="container__header-body-image">
+                                    <img src="./assets/img/dl1.jpeg" alt="" class="container__header-body-img">
+                                    <i class="container__header-body-icon fa-regular fa-heart"></i>
+                                    <i class="container__header-body-icon-right fa-solid fa-chevron-right"></i>
+                                </div>
+                                <div class="container__header-body-text">
+                                    <div class="container__header-body-heading">
+                                        <span class="container__header-body-heading-text">Vịnh Hạ Long, Việt Nam</span>
+                                        <p class="container__header-body-heading-evaluate">
+                                            <i class="container__header-body-heading-icon fa-solid fa-star"></i>
+                                            <span>4.5</span>
+                                        </p>
+                                    </div>
+                                    <p class="container__header-body-title">Được xem 35.531 lần trong tuần trước</p>
+                                    <p class="container__header-body-title">7 đêm ‧ Ngày 4 - Ngày 11 tháng 6</p>
+                                    <p class="container__header-body-price">
+                                        <span class="container__header-body-price-tax">tổng trước thuế </span>
+                                        <span class="container__header-body-price-tax">₫19.671.844 </span>
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- 9 -->
+                        <li class="container__header-body-item col l-3 m-6 c-12">
+                            <a href="'" class="container__header-body-link">
+                                <div class="container__header-body-image">
+                                    <img src="./assets/img/dl1.jpeg" alt="" class="container__header-body-img">
+                                    <i class="container__header-body-icon fa-regular fa-heart"></i>
+                                    <i class="container__header-body-icon-right fa-solid fa-chevron-right"></i>
+                                </div>
+                                <div class="container__header-body-text">
+                                    <div class="container__header-body-heading">
+                                        <span class="container__header-body-heading-text">Vịnh Hạ Long, Việt Nam</span>
+                                        <p class="container__header-body-heading-evaluate">
+                                            <i class="container__header-body-heading-icon fa-solid fa-star"></i>
+                                            <span>4.5</span>
+                                        </p>
+                                    </div>
+                                    <p class="container__header-body-title">Được xem 35.531 lần trong tuần trước</p>
+                                    <p class="container__header-body-title">7 đêm ‧ Ngày 4 - Ngày 11 tháng 6</p>
+                                    <p class="container__header-body-price">
+                                        <span class="container__header-body-price-tax">tổng trước thuế </span>
+                                        <span class="container__header-body-price-tax">₫19.671.844 </span>
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- 10 -->
+                        <li class="container__header-body-item col l-3 m-6 c-12">
+                            <a href="'" class="container__header-body-link">
+                                <div class="container__header-body-image">
+                                    <img src="./assets/img/dl1.jpeg" alt="" class="container__header-body-img">
+                                    <i class="container__header-body-icon fa-regular fa-heart"></i>
+                                    <i class="container__header-body-icon-right fa-solid fa-chevron-right"></i>
+                                </div>
+                                <div class="container__header-body-text">
+                                    <div class="container__header-body-heading">
+                                        <span class="container__header-body-heading-text">Vịnh Hạ Long, Việt Nam</span>
+                                        <p class="container__header-body-heading-evaluate">
+                                            <i class="container__header-body-heading-icon fa-solid fa-star"></i>
+                                            <span>4.5</span>
+                                        </p>
+                                    </div>
+                                    <p class="container__header-body-title">Được xem 35.531 lần trong tuần trước</p>
+                                    <p class="container__header-body-title">7 đêm ‧ Ngày 4 - Ngày 11 tháng 6</p>
+                                    <p class="container__header-body-price">
+                                        <span class="container__header-body-price-tax">tổng trước thuế </span>
+                                        <span class="container__header-body-price-tax">₫19.671.844 </span>
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- 11 -->
+                        <li class="container__header-body-item col l-3 m-6 c-12">
+                            <a href="'" class="container__header-body-link">
+                                <div class="container__header-body-image">
+                                    <img src="./assets/img/dl1.jpeg" alt="" class="container__header-body-img">
+                                    <i class="container__header-body-icon fa-regular fa-heart"></i>
+                                    <i class="container__header-body-icon-right fa-solid fa-chevron-right"></i>
+                                </div>
+                                <div class="container__header-body-text">
+                                    <div class="container__header-body-heading">
+                                        <span class="container__header-body-heading-text">Vịnh Hạ Long, Việt Nam</span>
+                                        <p class="container__header-body-heading-evaluate">
+                                            <i class="container__header-body-heading-icon fa-solid fa-star"></i>
+                                            <span>4.5</span>
+                                        </p>
+                                    </div>
+                                    <p class="container__header-body-title">Được xem 35.531 lần trong tuần trước</p>
+                                    <p class="container__header-body-title">7 đêm ‧ Ngày 4 - Ngày 11 tháng 6</p>
+                                    <p class="container__header-body-price">
+                                        <span class="container__header-body-price-tax">tổng trước thuế </span>
+                                        <span class="container__header-body-price-tax">₫19.671.844 </span>
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- 12 -->
+                        <li class="container__header-body-item col l-3 m-6 c-12">
+                            <a href="'" class="container__header-body-link">
+                                <div class="container__header-body-image">
+                                    <img src="./assets/img/dl1.jpeg" alt="" class="container__header-body-img">
+                                    <i class="container__header-body-icon fa-regular fa-heart"></i>
+                                    <i class="container__header-body-icon-right fa-solid fa-chevron-right"></i>
+                                </div>
+                                <div class="container__header-body-text">
+                                    <div class="container__header-body-heading">
+                                        <span class="container__header-body-heading-text">Vịnh Hạ Long, Việt Nam</span>
+                                        <p class="container__header-body-heading-evaluate">
+                                            <i class="container__header-body-heading-icon fa-solid fa-star"></i>
+                                            <span>4.5</span>
+                                        </p>
+                                    </div>
+                                    <p class="container__header-body-title">Được xem 35.531 lần trong tuần trước</p>
+                                    <p class="container__header-body-title">7 đêm ‧ Ngày 4 - Ngày 11 tháng 6</p>
+                                    <p class="container__header-body-price">
+                                        <span class="container__header-body-price-tax">tổng trước thuế </span>
+                                        <span class="container__header-body-price-tax">₫19.671.844 </span>
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+
+
+                        
+
+                        
+                    </ul>
+                </div>
+                <!-- </div> -->
+                <!-- mobile show -->
+                <div class="mobile-show-more">
+                    <h4 class="mobile-show-more-text">Tiếp tục khám phá danh mục được ưa chuộng</h4>
+                    <button class="mobile-show-more-btn">Hiển thị thêm</button>
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- phần footer -->
+        <div class="footer">
+            <div class="grid wide">
+                <div class="footer_fixed">
+                    <div class="footer__left">
+                        <span class="footer-text">© 2023 Airbnb, Inc.</span>
+                        ‧
+                        <a href="" class="footer-text">Quyền riêng tư</a>
+                        ‧
+                        <a href="" class="footer-text">Điều khoản</a>
+                        ‧
+                        <a href="" class="footer-text ml_20">Sơ đồ trang web</a>
+                    </div>
+        
+                    <div class="footer__right">
+                        <button class="footer-text">
+                            <i class="footer-icon-globe fa-solid fa-globe"></i>
+                            <span class="text">Tiếng Việt(VN)</span>
+                        </button>  
+                        <button class="footer-text">
+                            <span class="d">đ</span>
+                            <span class="text">VNĐ</span>
+                        </button> 
+                        <button class="footer-text">
+                            <span class="text">Hỗ trợ và tài nguyên</span>
+                            <i class="footer-icon-up fa-solid fa-chevron-up"></i>
+                        </button> 
+                    </div>
+                </div>
+
+                <button class="container__header-map">
+                    <span class="container__header-map-title">
+                        Hiện bản đồ
+                    </span>
+                    <i class="container__header-map-icon fa-solid fa-map"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="footer-mobile">
+            <div class="footer-mobile-top">
+                <div class="footer-mobile-top-vn">
+                    <i class="footer-mobile-top-vn-icon footer-icon-globe fa-solid fa-globe"></i>
+                    <h3 class="footer-mobile-top-vn-text">Tiếng Việt(VN)</h3>
+                </div>
+                <div class="footer-mobile-top-usd">
+                    <i class="footer-mobile-top-usd-icon fa-solid fa-dollar-sign"></i>
+                    <h3 class="footer-mobile-top-usd-text">USD</h3>
+                </div>
+            </div>
+            
+            <div class="footer-mobile-center">
+                <a href="" class="footer-mobile-center-text">© 2023 Airbnb, Inc.</a>
+            </div>
+
+            <div class="footer-mobile-bottom">
+                <a href="" class="footer-mobile-bottom-text">Quyền riêng tư</a>
+                ‧
+                <a href="" class="footer-mobile-bottom-text">Điều khoản</a>
+                ‧
+                <a href="" class="footer-mobile-bottom-text ml_20">Sơ đồ trang web</a>
+            </div>
+        </div>
+
+        <button class="container__header-map-mobile">
+            <span class="container__header-map-mobile-title">
+                Bản đồ
+            </span>
+            <i class="container__header-map-mobile-icon fa-solid fa-map"></i>
+        </button>
+
+        
+
+        <div class="footer-fixed-mobile">
+            <a href="" class="footer-fixed-mobile-discover active">
+                <i class="footer-fixed-mobile-discover-icon fa-solid fa-magnifying-glass"></i>
+                <h6 class="footer-fixed-mobile-discover-text">Khám phá</h6>
+            </a>
+            <a href="" class="footer-fixed-mobile-discover">
+                <i class="footer-fixed-mobile-discover-icon fa-regular fa-heart"></i>
+                <h6 class="footer-fixed-mobile-discover-text">Yêu thích</h6>
+            </a>
+            <a href="" class="footer-fixed-mobile-discover">
+                <!-- có thể tạo icon từ svg để đẹp hơn -->
+                <i class="footer-fixed-mobile-discover-icon fa-regular fa-user"></i>
+                <h6 class="footer-fixed-mobile-discover-text">Đăng nhập</h6>
+            </a>
+        </div>
+
+
+    <!-- Modal + Checkbox-->
+
+    <!-- checkbox modal của icon header right -->
+    <input type="checkbox" name="" class="nav__input-khung-modal" id="check-khung-modal">
+    <!-- <div class="modal__overlay-checkbox"></div> -->
+    <label for="check-khung-modal" class="modal__overlay-checkbox"></label>
+    <div class="header__right-item-globe-modal">
+        <label for="check-khung-modal">
+            <i class="header__right-item-globe-icon-close fa-solid fa-xmark"></i>
+        </label>
+        <div class="body-modal">
+            <header class="header__right-item-globe-heading">
+                <button class="header__right-item-globe-heading-title header__right-item-globe-heading-title__active">
+                    <span class="header__right-item-globe-heading-text header__right-item-globe-heading-text__active">Ngôn ngữ và khu vực</span>
+                </button>
+                <button class="header__right-item-globe-heading-title">
+                    <span class="header__right-item-globe-heading-text">Loại tiền tệ</span>
+                </button>
+            </header>
+
+            <div class="header__right-item-globe-translation">
+                <div class="header__right-item-globe-translation-text">
+                    <div class="header__right-item-globe-translation-text-heading">
+                        Bản dịch
+                        <i class="fa-solid fa-language"></i>
+                    </div>
+                    <div class="header__right-item-globe-translation-text-title">
+                        Dịch tự động nội dung mô tả và đánh giá sang Tiếng Việt.
+                    </div>
+                </div>
+                <!-- checkbox nút của bản ở trong modal của header right (icon globe) -->
+                <input type="checkbox" name="" class="nav__input-modal" id="check-modal">
+                <label for="check-modal" class="header__right-item-globe-translation-checkbox-ngoai">
+                    <label for="check-modal" class="header__right-item-globe-translation-checkbox-trong">
+                        <i class="header__right-item-globe-translation-checkbox-icon fa-solid fa-check"></i>
+                    </label>
+                </label>
+            </div>
+
+            <div class="header__right-item-globe-translation-language">
+                <h1 class="header__right-item-globe-translation-language-heading">
+                    Ngôn ngữ và khu vực được đề xuất
+                </h1>
+
+                <div class="header__right-item-globe-translation-language-body row l-12 m-12">
+                    <div class="header__right-item-globe-translation-language-body-text col l-2-4 m-4">
+                        <p>Français</p>
+                        <p>France</p>
+                    </div>
+
+                    <div class="header__right-item-globe-translation-language-body-text col l-2-4 m-4">
+                        <p>English</p>
+                        <p>United States</p>
+                    </div>
+
+                    <div class="header__right-item-globe-translation-language-body-text col l-2-4 m-4">
+                        <p>English</p>
+                        <p>United Kingdom</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header__right-item-globe-translation-language">
+                <h1 class="header__right-item-globe-translation-language-heading">
+                    Chọn ngôn ngữ và khu vực
+                </h1>
+
+                
+                <div class="header__right-item-globe-translation-language-body row l-12 m-12">
+                    <div class="header__right-item-globe-translation-language-body-text header__right-item-globe-translation-language-body-text-active col l-2-4 m-4">
+                        <p>Français</p>
+                        <p>France</p>
+                    </div>
+
+                    <div class="header__right-item-globe-translation-language-body-text col l-2-4 m-4">
+                        <p>English</p>
+                        <p>United States</p>
+                    </div>
+
+                    <div class="header__right-item-globe-translation-language-body-text col l-2-4 m-4">
+                        <p>English</p>
+                        <p>United Kingdom</p>
+                    </div>
+
+                    <div class="header__right-item-globe-translation-language-body-text col l-2-4 m-4">
+                        <p>Français</p>
+                        <p>France</p>
+                    </div>
+
+                    <div class="header__right-item-globe-translation-language-body-text col l-2-4 m-4">
+                        <p>English</p>
+                        <p>United States</p>
+                    </div>
+
+                    <div class="header__right-item-globe-translation-language-body-text col l-2-4 m-4">
+                        <p>English</p>
+                        <p>United Kingdom</p>
+                    </div>
+
+                    <div class="header__right-item-globe-translation-language-body-text col l-2-4 m-4">
+                        <p>Français</p>
+                        <p>France</p>
+                    </div>
+
+                    <div class="header__right-item-globe-translation-language-body-text col l-2-4 m-4">
+                        <p>English</p>
+                        <p>United States</p>
+                    </div>
+
+                    <div class="header__right-item-globe-translation-language-body-text col l-2-4 m-4">
+                        <p>English</p>
+                        <p>United Kingdom</p>
+                    </div>
+
+                    <div class="header__right-item-globe-translation-language-body-text col l-2-4 m-4">
+                        <p>Français</p>
+                        <p>France</p>
+                    </div>
+
+                    <div class="header__right-item-globe-translation-language-body-text col l-2-4 m-4">
+                        <p>English</p>
+                        <p>United States</p>
+                    </div>
+
+                    <div class="header__right-item-globe-translation-language-body-text col l-2-4 m-4">
+                        <p>English</p>
+                        <p>United Kingdom</p>
+                    </div>
+
+                    <div class="header__right-item-globe-translation-language-body-text col l-2-4 m-4">
+                        <p>Français</p>
+                        <p>France</p>
+                    </div>
+
+                    <div class="header__right-item-globe-translation-language-body-text col l-2-4 m-4">
+                        <p>English</p>
+                        <p>United States</p>
+                    </div>
+
+                    <div class="header__right-item-globe-translation-language-body-text col l-2-4 m-4">
+                        <p>English</p>
+                        <p>United Kingdom</p>
+                    </div>
+
+                    <div class="header__right-item-globe-translation-language-body-text col l-2-4 m-4">
+                        <p>Français</p>
+                        <p>France</p>
+                    </div>
+
+                    <div class="header__right-item-globe-translation-language-body-text col l-2-4 m-4">
+                        <p>English</p>
+                        <p>United States</p>
+                    </div>
+
+                    <div class="header__right-item-globe-translation-language-body-text col l-2-4 m-4">
+                        <p>English</p>
+                        <p>United Kingdom</p>
+                    </div>
+
+                    <div class="header__right-item-globe-translation-language-body-text col l-2-4 m-4">
+                        <p>Français</p>
+                        <p>France</p>
+                    </div>
+
+                    <div class="header__right-item-globe-translation-language-body-text col l-2-4 m-4">
+                        <p>English</p>
+                        <p>United States</p>
+                    </div>
+
+                    <div class="header__right-item-globe-translation-language-body-text col l-2-4 m-4">
+                        <p>English</p>
+                        <p>United Kingdom</p>
+                    </div>
+
+                    <div class="header__right-item-globe-translation-language-body-text col l-2-4 m-4">
+                        <p>Français</p>
+                        <p>France</p>
+                    </div>
+
+                    <div class="header__right-item-globe-translation-language-body-text col l-2-4 m-4">
+                        <p>English</p>
+                        <p>United States</p>
+                    </div>
+
+                    <div class="header__right-item-globe-translation-language-body-text col l-2-4 m-4">
+                        <p>English</p>
+                        <p>United Kingdom</p>
+                    </div>
+
+                    <div class="header__right-item-globe-translation-language-body-text col l-2-4 m-4">
+                        <p>Français</p>
+                        <p>France</p>
+                    </div>
+
+                    <div class="header__right-item-globe-translation-language-body-text col l-2-4 m-4">
+                        <p>English</p>
+                        <p>United States</p>
+                    </div>
+
+                    <div class="header__right-item-globe-translation-language-body-text col l-2-4 m-4">
+                        <p>English</p>
+                        <p>United Kingdom</p>
+                    </div>
+
+                    <div class="header__right-item-globe-translation-language-body-text col l-2-4 m-4">
+                        <p>English</p>
+                        <p>United Kingdom</p>
+                    </div>
+
+                    <div class="header__right-item-globe-translation-language-body-text col l-2-4 m-4">
+                        <p>Français</p>
+                        <p>France</p>
+                    </div>
+
+                    <div class="header__right-item-globe-translation-language-body-text col l-2-4 m-4">
+                        <p>English</p>
+                        <p>United States</p>
+                    </div>
+
+                    <div class="header__right-item-globe-translation-language-body-text col l-2-4 m-4">
+                        <p>English</p>
+                        <p>United Kingdom</p>
+                    </div>
+
+                    <div class="header__right-item-globe-translation-language-body-text col l-2-4 m-4">
+                        <p>English</p>
+                        <p>United Kingdom</p>
+                    </div>
+
+                    <div class="header__right-item-globe-translation-language-body-text col l-2-4 m-4">
+                        <p>Français</p>
+                        <p>France</p>
+                    </div>
+
+                    <div class="header__right-item-globe-translation-language-body-text col l-2-4 m-4">
+                        <p>English</p>
+                        <p>United States</p>
+                    </div>
+
+                    <div class="header__right-item-globe-translation-language-body-text col l-2-4 m-4">
+                        <p>English</p>
+                        <p>United Kingdom</p>
+                    </div>
+
+                    <div class="header__right-item-globe-translation-language-body-text col l-2-4 m-4">
+                        <p>English</p>
+                        <p>United Kingdom</p>
+                    </div>
+
+                    <div class="header__right-item-globe-translation-language-body-text col l-2-4 m-4">
+                        <p>Français</p>
+                        <p>France</p>
+                    </div>
+
+                    <div class="header__right-item-globe-translation-language-body-text col l-2-4 m-4">
+                        <p>English</p>
+                        <p>United States</p>
+                    </div>
+
+                    <div class="header__right-item-globe-translation-language-body-text col l-2-4 m-4">
+                        <p>English</p>
+                        <p>United Kingdom</p>
+                    </div>
+
+                    <div class="header__right-item-globe-translation-language-body-text col l-2-4 m-4">
+                        <p>English</p>
+                        <p>United Kingdom</p>
+                    </div>
+
+                    <div class="header__right-item-globe-translation-language-body-text col l-2-4 m-4">
+                        <p>Français</p>
+                        <p>France</p>
+                    </div>
+
+                    <div class="header__right-item-globe-translation-language-body-text col l-2-4 m-4">
+                        <p>English</p>
+                        <p>United States</p>
+                    </div>
+
+                    <div class="header__right-item-globe-translation-language-body-text col l-2-4 m-4">
+                        <p>English</p>
+                        <p>United Kingdom</p>
+                    </div>
+
+        
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- modal + checkbox của header center (tạo modal đè lên header ) -->
+    <input type="checkbox" name="" class="nav__input-modal-location" id="check-khung-modal-location">
+    <label for="check-khung-modal-location" class="header__navbar-modal-overlay"></label>
+    
+    <div class="header-modal">
+        <!-- <div class="grid wide"> -->
+            <!-- <div class="header__navbar"> -->
+                <!-- <a href="#" class="header__logo l-4">
+                    <img class="header__logo-img" src="./assets/img/logo.png" alt="">
+                </a> -->
+
+        <div class="header__center-modal">
+            <ul class="header__center-list-modal">
+                <li class="header__center-item-modal">
+                    <button class="header__center-link-modal header__center-link-modal-active">Chỗ ở</button>
+                </li>
+                <li class="header__center-item-modal">
+                    <button class="header__center-link-modal">Trải nghiệm</button>
+                </li>
+                <li class="header__center-item-modal">
+                    <a href="" class="header__center-link-modal">Trải nghiệm trực tuyến</a>
+                </li>
+            </ul>
+        </div>
+
+
+
+
+
+                <!-- <div class="header__right l-4">
+                    <ul class="header__right-list">
+                        <li class="header__right-item-text">
+                            <a href="" class="header__right-link">Cho thuê chỗ ở qua Airbnb</a>
+                        </li>
+
+                        <li class="header__right-item-icon">
+                            <label for="check-khung-modal" class="header__right-link header__right-link-globe">
+                                <i class=" fa-sharp fa-solid fa-globe"></i>
+                            </label>
+                        </li>
+
+                        <li class="header__right-item-account">
+                            <button class="header__right-link header__right-link-account">
+                                <i class="header__right-link header__right-link-icon-bars fa-solid fa-bars"></i>
+                                <img class="header__right-link-img" src="./assets/img/naruto_after.jpg" alt="">
+                            </button>
+                            
+                            <ul class="header__right-menu">
+                                <li class="header__right-user-item">
+                                    <a href="" class="header__right-menu-link">Đăng ký</a>
+                                </li>
+                                
+                                <li class="header__right-user-item border-dangnhap">
+                                    <a href="" class="header__right-menu-link">Đăng nhập</a>
+                                </li>
+
+                                <li class="header__right-user-item">
+                                    <a href="" class="header__right-menu-link">Cho thuê chỗ ở qua Airbnb</a>
+                                </li>
+
+                                <li class="header__right-user-item">
+                                    <a href="" class="header__right-menu-link">Tổ chức trải nghiệm</a>
+                                </li>
+
+                                <li class="header__right-user-item">
+                                    <a href="" class="header__right-menu-link">Trợ giúp</a>
+                                </li>
+                            </ul>
+
+                        </li>
+                    </ul>
+                </div> -->
+            <!-- </div> -->
+
+            <!-- modal + checkbox của address (địa diểm) -->
+        <input type="checkbox" name="" class="nav__input-modal-address" id="check-khung-modal-address">
+        <div class="header__navbar-modal">
+            <button class="header__navbar-modal-accommodation header__navbar-modal-accommodation-active ">
+                <label for="check-khung-modal-address">
+                    <div class="header__navbar-modal-accommodation-title-text header__navbar-modal-accommodation-title-text-first">
+                        <span class="header__navbar-modal-accommodation-title">Địa điểm</span>
+                        <!-- <label for="check-khung-modal-address" class="label-input"> -->
+                            <input type="text" class="header__navbar-modal-accommodation-text-input" placeholder="Tìm kiếm điểm đến">
+                        <!-- </label> -->
+                    </div>
+                </label>
+
+                <div class="header__navbar-modal-focus-accommodation">
+                    <h1>Tìm kiếm theo khu vực</h1>
+                    <div class="header__navbar-modal-focus-accommodation-area row sm-gutter">
+                        <div class="header__navbar-modal-focus-accommodation-area-map col l-4 m-4">
+                            <img src="./assets/img/ban-do/ban-do-1.jpg" alt="" class="header__navbar-modal-focus-accommodation-area-map-img">
+                            <span class="header__navbar-modal-focus-accommodation-area-map-text">Tìm kiếm linh hoạt</span>
+                        </div>
+
+                        <div class="header__navbar-modal-focus-accommodation-area-map col l-4 m-4">
+                            <img src="./assets/img/ban-do/ban-do-1.jpg" alt="" class="header__navbar-modal-focus-accommodation-area-map-img">
+                            <span class="header__navbar-modal-focus-accommodation-area-map-text">Tìm kiếm linh hoạt</span>
+                        </div>
+
+                        <div class="header__navbar-modal-focus-accommodation-area-map col l-4 m-4">
+                            <img src="./assets/img/ban-do/ban-do-1.jpg" alt="" class="header__navbar-modal-focus-accommodation-area-map-img">
+                            <span class="header__navbar-modal-focus-accommodation-area-map-text">Tìm kiếm linh hoạt</span>
+                        </div>
+
+                        <div class="header__navbar-modal-focus-accommodation-area-map col l-4 m-4">
+                            <img src="./assets/img/ban-do/ban-do-1.jpg" alt="" class="header__navbar-modal-focus-accommodation-area-map-img">
+                            <span class="header__navbar-modal-focus-accommodation-area-map-text">Tìm kiếm linh hoạt</span>
+                        </div>
+
+                        <div class="header__navbar-modal-focus-accommodation-area-map col l-4 m-4">
+                            <img src="./assets/img/ban-do/ban-do-1.jpg" alt="" class="header__navbar-modal-focus-accommodation-area-map-img">
+                            <span class="header__navbar-modal-focus-accommodation-area-map-text">Tìm kiếm linh hoạt</span>
+                        </div>
+
+                        <div class="header__navbar-modal-focus-accommodation-area-map col l-4 m-4">
+                            <img src="./assets/img/ban-do/ban-do-1.jpg" alt="" class="header__navbar-modal-focus-accommodation-area-map-img">
+                            <span class="header__navbar-modal-focus-accommodation-area-map-text">Tìm kiếm linh hoạt</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </button>
+
+            <!-- modal + checkbox của checkin (nhận phòng) -->
+            <input type="checkbox" name="" class="nav__input-modal-checkin" id="check-khung-modal-checkin">
+            <button class="header__navbar-modal-accommodation m-2">
+                <label for="check-khung-modal-checkin">
+                    <div class="header__navbar-modal-accommodation-title-text">
+                        <span class="header__navbar-modal-accommodation-title">Nhận phòng</span>
+                        <span class="header__navbar-modal-accommodation-text">Thêm ngày</span>
+                    </div>
+                </label>
+
+                <div class="header__navbar-modal-accommodation-checkin">
+                    <div class="header__navbar-modal-accommodation-checkin-date">
+                        <div class="header__navbar-modal-accommodation-checkin-date-frame">
+                            <span class="header__navbar-modal-accommodation-checkin-date-text header__navbar-modal-accommodation-checkin-date-text-active">Chọn ngày</span>
+                            <span class="header__navbar-modal-accommodation-checkin-date-text">Ngày linh hoạt</span>
+                        </div>
+                    </div>
+
+                    <div class="header__navbar-modal-accommodation-checkin-calendar">
+                        <i class="header__navbar-modal-accommodation-checkin-calendar-turn_left-icon active fa-solid fa-chevron-left "></i>
+                        <div class="header__navbar-modal-accommodation-checkin-calendar-month thangtu">
+                            <div class="header__navbar-modal-accommodation-checkin-calendar-month-heading">
+                                Tháng 4 năm 2023
+                            </div>
+
+                            <div class="header__navbar-modal-accommodation-checkin-calendar-month-week row sm-gutter">
+                                <span class="col l-1_5 m-1_5">T2</span> 
+                                <span class="col l-1_5 m-1_5">T3</span>
+                                <span class="col l-1_5 m-1_5">T4</span>
+                                <span class="col l-1_5 m-1_5">T5</span>
+                                <span class="col l-1_5 m-1_5">T6</span>
+                                <span class="col l-1_5 m-1_5">T7</span>
+                                <span class="col l-1_5 m-1_5">CN</span>
+                            </div>
+
+                            <div class="header__navbar-modal-accommodation-checkin-calendar-month-days row sm-gutter">
+                                <span class="header__navbar-modal-accommodation-checkin-calendar-month-days-no_month col l-1_5 m-1_5">29</span>
+                                <span class="header__navbar-modal-accommodation-checkin-calendar-month-days-no_month col l-1_5 m-1_5">28</span>
+                                <span class="header__navbar-modal-accommodation-checkin-calendar-month-days-no_month col l-1_5 m-1_5">29</span>
+                                <span class="header__navbar-modal-accommodation-checkin-calendar-month-days-no_month col l-1_5 m-1_5">30</span>
+                                <span class="header__navbar-modal-accommodation-checkin-calendar-month-days-no_month col l-1_5 m-1_5">31</span>
+                                <span class="header__navbar-modal-accommodation-checkin-calendar-month-days-active col l-1_5 m-1_5">1</span>
+                                <span class="header__navbar-modal-accommodation-checkin-calendar-month-days-active col l-1_5 m-1_5">2</span>
+                                <span class="header__navbar-modal-accommodation-checkin-calendar-month-days-active col l-1_5 m-1_5">3</span>
+                                <span class="header__navbar-modal-accommodation-checkin-calendar-month-days-active col l-1_5 m-1_5">4</span>
+                                <span class="col l-1_5 m-1_5">5</span>
+                                <span class="col l-1_5 m-1_5">6</span>
+                                <span class="col l-1_5 m-1_5">7</span>
+                                <span class="col l-1_5 m-1_5">8</span>
+                                <span class="col l-1_5 m-1_5">9</span>
+                                <span class="col l-1_5 m-1_5">10</span>
+                                <span class="col l-1_5 m-1_5">11</span>
+                                <span class="col l-1_5 m-1_5">12</span>
+                                <span class="col l-1_5 m-1_5">13</span>
+                                <span class="col l-1_5 m-1_5">14</span>
+                                <span class="col l-1_5 m-1_5">15</span>
+                                <span class="col l-1_5 m-1_5">16</span>
+                                <span class="col l-1_5 m-1_5">17</span>
+                                <span class="col l-1_5 m-1_5">18</span>
+                                <span class="col l-1_5 m-1_5">19</span>
+                                <span class="col l-1_5 m-1_5">20</span>
+                                <span class="col l-1_5 m-1_5">21</span>
+                                <span class="col l-1_5 m-1_5">22</span>
+                                <span class="col l-1_5 m-1_5">23</span>
+                                <span class="col l-1_5 m-1_5">24</span>
+                                <span class="col l-1_5 m-1_5">25</span>
+                                <span class="col l-1_5 m-1_5">26</span>
+                                <span class="col l-1_5 m-1_5">27</span>
+                                <span class="col l-1_5 m-1_5">28</span>
+                                <span class="col l-1_5 m-1_5">29</span>
+                                <span class="col l-1_5 m-1_5">30</span>
+                            </div>
+                        </div>
+
+                        <div class="header__navbar-modal-accommodation-checkin-calendar-month thangnam">
+                            <div class="header__navbar-modal-accommodation-checkin-calendar-month-heading">
+                                Tháng 5 năm 2023
+                            </div>
+
+                            <div class="header__navbar-modal-accommodation-checkin-calendar-month-week row sm-gutter">
+                                <span class="col l-1_5">T2</span>
+                                <span class="col l-1_5">T3</span>
+                                <span class="col l-1_5">T4</span>
+                                <span class="col l-1_5">T5</span>
+                                <span class="col l-1_5">T6</span>
+                                <span class="col l-1_5">T7</span>
+                                <span class="col l-1_5">CN</span>
+                            </div>
+
+                            <div class="header__navbar-modal-accommodation-checkin-calendar-month-days row sm-gutter">
+                                <span class="col l-1_5">1</span>
+                                <span class="col l-1_5">2</span>
+                                <span class="col l-1_5">3</span>
+                                <span class="col l-1_5">4</span>
+                                <span class="col l-1_5">5</span>
+                                <span class="col l-1_5">6</span>
+                                <span class="col l-1_5">7</span>
+                                <span class="col l-1_5">8</span>
+                                <span class="col l-1_5">9</span>
+                                <span class="col l-1_5">10</span>
+                                <span class="col l-1_5">11</span>
+                                <span class="col l-1_5">12</span>
+                                <span class="col l-1_5">13</span>
+                                <span class="col l-1_5">14</span>
+                                <span class="col l-1_5">15</span>
+                                <span class="col l-1_5">16</span>
+                                <span class="col l-1_5">17</span>
+                                <span class="col l-1_5">18</span>
+                                <span class="col l-1_5">19</span>
+                                <span class="col l-1_5">20</span>
+                                <span class="col l-1_5">21</span>
+                                <span class="col l-1_5">22</span>
+                                <span class="col l-1_5">23</span>
+                                <span class="col l-1_5">24</span>
+                                <span class="col l-1_5">25</span>
+                                <span class="col l-1_5">26</span>
+                                <span class="col l-1_5">27</span>
+                                <span class="col l-1_5">28</span>
+                                <span class="col l-1_5">29</span>
+                                <span class="col l-1_5">30</span>
+                                <span class="col l-1_5">31</span>
+                                <span class="header__navbar-modal-accommodation-checkin-calendar-month-days-no_month col l-1_5"> </span>
+                                <span class="header__navbar-modal-accommodation-checkin-calendar-month-days-no_month col l-1_5"> </span>
+                                <span class="header__navbar-modal-accommodation-checkin-calendar-month-days-no_month col l-1_5"> </span>
+                                <span class="header__navbar-modal-accommodation-checkin-calendar-month-days-no_month col l-1_5"> </span>
+                            </div>
+                        </div>
+
+                        <!-- <div class="header__navbar-modal-accommodation-checkin-calendar-turn_right"> -->
+                        <i class="header__navbar-modal-accommodation-checkin-calendar-turn_right-icon fa-solid fa-chevron-right"></i>
+                        <!-- </div> -->
+                    </div>
+
+                    <div class="header__navbar-modal-accommodation-checkin-footer">
+                        <div class="header__navbar-modal-accommodation-checkin-footer-text">
+                            <span class="header__navbar-modal-accommodation-checkin-footer-text-active">Ngày chính xác</span>
+                        </div>
+                        <div class="header__navbar-modal-accommodation-checkin-footer-text">
+                            <span><i class="fa-solid fa-plus-minus"></i> 1 ngày</span>
+                        </div>
+                        <div class="header__navbar-modal-accommodation-checkin-footer-text">
+                            <span><i class="fa-solid fa-plus-minus"></i> 2 ngày</span>
+                        </div>
+                        <div class="header__navbar-modal-accommodation-checkin-footer-text">
+                            <span><i class="fa-solid fa-plus-minus"></i> 3 ngày</span>
+                        </div>
+                        <div class="header__navbar-modal-accommodation-checkin-footer-text">
+                            <span><i class="fa-solid fa-plus-minus"></i> 7 ngày</span>
+                        </div>
+                    </div>
+                </div>
+
+            </button>
+            <button class="header__navbar-modal-accommodation m-2">
+                <div class="header__navbar-modal-accommodation-title-text">
+                    <span class="header__navbar-modal-accommodation-title">Trả phòng</span>
+                    <span class="header__navbar-modal-accommodation-text">Thêm ngày</span>
+                </div>
+            </button>
+            <button class="header__navbar-modal-accommodation ">
+                <div class="header__navbar-modal-accommodation-title-text header__navbar-modal-accommodation-guest-search">
+                    <div class="header__navbar-modal-accommodation-guest">
+                        <span class="header__navbar-modal-accommodation-title">Khách</span>
+                        <span class="header__navbar-modal-accommodation-text">Thêm ngày</span>
+                    </div>
+                    <a href="" class="header__navbar-modal-accommodation-search">
+                        <i class="header__navbar-modal-accommodation-search-icon fa-solid fa-magnifying-glass"></i>
+                        <span class="header__navbar-modal-accommodation-search-text">Tìm kiếm</span>
+                    </a>
+                </div>
+            </button>
+        </div>
+        <!-- </div> -->
+    </div>
+    <!-- modal search mobile -->
+    <input type="checkbox" name="" class="check-box-modal-searcb-mobile" id="check-search-mobile">
+    <div class="modal_search-mobile">
+        <label for="check-search-mobile">
+            <i class="modal_search-mobile-close fa-solid fa-xmark"></i>
+        </label>
+        <div class="modal_search-mobile-heading">
+            <h3 class="modal_search-mobile-heading-text active">Chỗ ở</h3>
+            <div class="width-10px"></div>
+            <h3 class="modal_search-mobile-heading-text">Trải nghiệm</h3>
+        </div>
+        <div class="modal_search-mobile-location">
+            <h1 class="modal_search-mobile-location-heading">Bạn sẽ đi đâu?</h1>
+            <div class="modal_search-mobile-location-search">
+                <i class="modal_search-mobile-location-search-icon fa-solid fa-magnifying-glass"></i>
+                <input type="text" class="modal_search-mobile-location-search-input" placeholder="Tìm kiếm điểm đến">
+            </div>
+            <div class="modal_search-mobile-location-list">
+                <div class="modal_search-mobile-location-item ">
+                    <img src="./assets/img/ban-do/ban-do-1.jpg" alt="" class="modal_search-mobile-location-item-img">
+                    <p class="modal_search-mobile-location-item-text">Tìm kiếm linh hoạt</p>
+                </div>
+                <div class="modal_search-mobile-location-item ">
+                    <img src="./assets/img/ban-do/ban-do-1.jpg" alt="" class="modal_search-mobile-location-item-img">
+                    <p class="modal_search-mobile-location-item-text">Tìm kiếm linh hoạt</p>
+                </div>
+                <div class="modal_search-mobile-location-item ">
+                    <img src="./assets/img/ban-do/ban-do-1.jpg" alt="" class="modal_search-mobile-location-item-img">
+                    <p class="modal_search-mobile-location-item-text">Tìm kiếm linh hoạt</p>
+                </div>
+                <div class="modal_search-mobile-location-item ">
+                    <img src="./assets/img/ban-do/ban-do-1.jpg" alt="" class="modal_search-mobile-location-item-img">
+                    <p class="modal_search-mobile-location-item-text">Tìm kiếm linh hoạt</p>
+                </div>
+                <div class="modal_search-mobile-location-item ">
+                    <img src="./assets/img/ban-do/ban-do-1.jpg" alt="" class="modal_search-mobile-location-item-img">
+                    <p class="modal_search-mobile-location-item-text">Tìm kiếm linh hoạt</p>
+                </div>
+            </div>
+        </div>
+        <button class="modal_search-mobile-time">
+            <h5 class="modal_search-mobile-time-left">Thời gian</h5>
+            <h5 class="modal_search-mobile-time-right">Thêm ngày</h5>
+        </button>
+        <div class="modal_search-mobile-guest">
+            <h5 class="modal_search-mobile-guest-left">Khách</h5>
+            <h5 class="modal_search-mobile-guest-right">Thêm khách</h5>
+        </div>
+    </div>
+    <div class="modal_search-mobil-footer">
+        <h5 class="modal_search-mobile-footer-left">Xóa tất cả</h5>
+        <div class="modal_search-mobile-footer-right">
+            <i class="modal_search-mobile-footer-right-icon fa-solid fa-magnifying-glass"></i>
+            <div class="width_8"></div>
+            <h5 class="modal_search-mobile-footer-right-text">Tìm kiếm</h5>
+        </div>
+    </div>
+
+    <script src="./assets/main.js"></script>
+</body>
+</html>

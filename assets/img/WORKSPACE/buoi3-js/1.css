@@ -1,0 +1,97 @@
+button{
+    background-color: brown;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: aliceblue;
+    color: brown;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.menu{
+    width: 100%;
+    height: 50px;
+    background-color: darkblue;
+    text-align: center;
+}
+
+.menu a, .dn{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+.menu a:hover, .dn:hover{
+    background-color: beige;
+    color: darkblue;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.formdn{
+    width: 400px;
+    height: auto;
+    padding: 15px;
+    border: 2px solid darkblue;
+    border-radius: 10px;
+    text-align: center;
+    margin: auto;
+    margin-top: 200px;
+    /* ẩn đối tượng (form) */
+    visibility: hidden;
+    /* khi tắt nó xoay vào đẹp hơn*/
+    transform: scale(0) rotate(0);
+    /* tgian 1s */
+    transition: 1s;
+}
+
+.active{
+    /* bật đối tượng (form) */
+    visibility: visible;
+    /* bật mờ ra xoay 360 độ */
+    transform: scale(1) rotate(360deg);
+}
+
+.txt{
+    width: 100%;
+    height: 25px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.btn{
+    padding: 5px 10px;
+    background-color: darkblue;
+    color: wheat;
+    border-radius: 5px;
+}
+
+.btn:hover{
+    background-color: yellow;
+    color: darkblue;
+    cursor: pointer;
+}
+
+.nutdn{
+    padding: 5px 10px;
+    background-color: white;
+    color: darkblue;
+    border-radius: 5px;
+}
+
+.nutdn:hover{
+    background-color: green;
+    color: wheat;
+    cursor: pointer;
+}
+
+
