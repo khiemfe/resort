@@ -929,7 +929,7 @@ body.overflow_hidden {
     /* 680 - mt20 - mb20 - height icon-close 20 = 620 */
     height: 620px;
     background-color: var(--white-color);
-    border-radius: 10px;
+    /* border-radius: 10px; */
     overflow-x: auto;
     padding: 0 20px;
 }
