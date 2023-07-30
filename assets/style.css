@@ -9,7 +9,7 @@
 }
 
 .container {
-   
+   margin-bottom: 40px;
 }
 
 /* .resort::-webkit-scrollbar {
@@ -1206,7 +1206,6 @@ body.overflow_hidden {
     right: auto;
     left: auto;
     background-color: var(--white-color);
-    
 }
 
 .container__header {
@@ -1589,15 +1588,11 @@ body.overflow_hidden {
     position: absolute;
     bottom: 90px;
     right: calc(45% - 1px);
-    /* right: 50%; */
-    /* transform: translateX(50%); */
     background-color: rgb(34, 31, 31);
-    width: 154px;
-    height: 50px;
+    width: 120px;
+    height: 40px;
     border-radius: 30px;
-    /* text-align: center;
-    line-height: 50px; */
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 600;
     border: none;
     outline: none;
@@ -1616,7 +1611,6 @@ body.overflow_hidden {
     cursor: pointer;
     transform: scale(1.04);
     transition: transform linear 0.2s;  
-    font-size: 15px;
 }
 
 
